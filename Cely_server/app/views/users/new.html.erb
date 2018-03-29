@@ -1,0 +1,11 @@
+<div style="width:80%;margin:0 auto;">
+
+<h1>Crear Usuario</h1>
+<%= form_for(@user) do |f| %>
+  <div class= "field">
+    <%= f.text_field :nombre, placeholder: "Nombre",class:"form-control"%>
+  </div>
+  <div class="field">
+    <%= f.submit "Guardar",class:"btn"%>
+  </div>
+<%end%>
